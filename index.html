@@ -53,6 +53,7 @@
         <ul class="nav__items">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
           <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -84,7 +85,7 @@
    <section class="about" id="about">
     <div class="row">
         <h2>About Me</h2>
-        <div class="about__content" style="display: grid; grid-template-columns: 1fr 120px; gap: 2rem; align-items: start;">
+        <div class="about__content" style="display: grid; grid-template-columns: 1fr 120px; gap: 1rem; align-items: start;">
             <div class="about__text">
                 <p>
                     Modupeola Fagbenro is a dedicated and results-driven Master of Science in Data Science student at George Washington University. With strong expertise in analytics and machine learning, particularly in Natural Language Processing (NLP), she has worked on impactful projects as a Data Scientist and Business Intelligence Analyst/Data Analyst. Her commitment to volunteerism is evident through her active contributions to sustainability data science research at George Washington University's Data Science for Sustainability Development Hub.
@@ -93,9 +94,9 @@
 
                     In addition to her professional and academic pursuits, Modupeola volunteers as a marketing team member for the George Hackathon at George Washington University and with Women in Data Science Puget Sound in Washington, showcasing her dedication to community and collaboration.
                 </p>
-                <a href="#" class="btn">My Resume</a>
+                <a href="./images/Resume_Modupeola_Fagbenro.pdf" class="btn">My Resume</a>
             </div>
-            <div class="about__photo-container" style="width: 200px; height: 200px; overflow: hidden; border-radius: 12px;">
+            <div class="about__photo-container" style="width: 210px; height: 300px; overflow: hidden; border-radius: 10px;">
                 <img class="about__photo" src="./images/modupeola_pix.jpeg" alt="Modupeola Fagbenro's portrait" style="width: 100%; height: 100%; object-fit: cover;"/>
             </div>
         </div>
@@ -240,6 +241,57 @@
 
 </section>
 
+      <!-- ***** Skills ***** -->
+<section class="skills" id="skills">
+    <div class="row">
+        <h2>Technical Skills</h2>
+        <div class="skills__content">
+            <!-- Programming Languages -->
+            <div class="skills__box">
+                <h3>Programming & Databases</h3>
+                <ul class="skills__list">
+                    <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                    <li>R (tidyverse, ggplot2, caret)</li>
+                    <li>SQL (PostgreSQL, MySQL)</li>
+                    <li>NoSQL (MongoDB, Redis)</li>
+                </ul>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="skills__box">
+                <h3>Machine Learning & AI</h3>
+                <ul class="skills__list">
+                    <li>Deep Learning (PyTorch,TensorFlow, Keras)</li>
+                    <li>NLP (BERT, Transformers, spaCy)</li>
+                    <li>Computer Vision (OpenCV, ResNet)</li>
+                    <li>GenAI (LLMs, RAG, Embeddings,AWS Bedrock)</li>
+                </ul>
+            </div>
+
+            <!-- Data Engineering -->
+            <div class="skills__box">
+                <h3>Data Engineering & Cloud</h3>
+                <ul class="skills__list">
+                    <li>AWS (Redshift, S3, Lambda, EC2)</li>
+                    <li>ETL Pipeline Development</li>
+                    <li>Data Warehousing</li>
+                    <li>Big Data (Spark, Hadoop)</li>
+                </ul>
+            </div>
+
+            <!-- Business Intelligence -->
+            <div class="skills__box">
+                <h3>BI & Visualization</h3>
+                <ul class="skills__list">
+                    <li>Tableau</li>
+                    <li>Power BI</li>
+                    <li>Looker</li>
+                    <li>Data Storytelling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ***** Research ***** -->
 
@@ -332,23 +384,31 @@
     <h2>Get in Touch</h2>
     <div class="contact__info">
       <p>
-        Actively seeking roles as a Data Analyst, BI Engineer, Data Scientist, Machine Learning Engineer, or GenAI Specialist.
+        Actively seeking roles as a Data Analyst, BI Engineer, Data Scientist, Junior Machine Learning Engineer, or GenAI Specialist.
         If you have opportunities, questions, or just want to connect, feel free to reach out!
       </p>
-      <a href="mailto:modupeola.fagbenro@gwu.edu" class="btn" target="_blank">Hire Me</a>
     </div>
   </div>
 </section>
   </main>
 <!------****Footer**** ------>
   <footer role="contentinfo" class="footer">
-    <div class="row" style="display:flex; flex-direction:column; align-items: center; justify-content: center;" >
+    <div class="row" style="display:flex; flex-direction:column; align-items: center; justify-content: center" >
         <!-- Your existing social links -->
+        <!-- Add Connect With Me heading -->
+        <h3 style="color: var(--white); margin-bottom: 1rem;">Connect With Me</h3>
+
         <ul class="footer__social-links" style="display: flex; justify-content: center; align-items:center; gap:2rem; padding:0; margin:2rem 0; width:100%; list-style: none;">
             <li class="footer__social-link-item" style="display: inline-block; margin:0 1rem;">
                 <a href="https://github.com/Modupeolawuraola" title="Link to Github Profile" rel="noopener noreferrer" target="_blank">
                     <img src="./images/github.svg" class="footer__social-image" alt="Github Profile" style= "width: 30px; height:30px;">
                 </a>
+            </li>
+            <li class="footer__social-link-item" style="display: inline-block; margin:0 1rem;">
+            <a href="mailto:modupeola.fagbenro@gwu.edu" title="Link to Gmail" rel="noopener noreferrer">
+                <img src="./images/Gmail_Logo.png" class="footer__social-image" alt="Gmail" style="width: 30px; height:30px;">
+
+            </a>
             </li>
             <li class="footer__social-link-item" style="display: inline-block; margin:0 1rem;">
                 <a href="https://medium.com/@Gold31" title="Link to Medium Page" rel="noopener noreferrer" target="_blank">
@@ -364,14 +424,12 @@
 
         <!-- Your existing copyright text -->
         <p class="footer__text" style="text-align: center; width:100%;">
-            &copy; 2025 - Template designed & developed by <a href="https://nisar.dev" class="link">Modupeola</a>.
+            &copy; 2025 - Template designed & developed by <a href="https://modupeolawuraola.github.io/" class="link">Modupeola</a>.
         </p>
 
         <!-- Your existing GitHub buttons -->
         <div class="footer__github-buttons" style="display: flex; justify-content: center; width:100%; margin-top:1rem;">
-            <iframe
-                src="https://github.com/Modupeolawuraola"
-                frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+            <iframe src="https://github.com/Modupeolawuraola" frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
             </iframe>
         </div>
     </div>

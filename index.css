@@ -415,7 +415,8 @@ body:not(.user-is-tabbing) a:focus {
 .work,
 .research,
 .blog,
-.contact {
+.contact,
+.skills {
     background: linear-gradient(to bottom right, #2d1b40, #000000);
 }
 
@@ -628,7 +629,61 @@ body:not(.user-is-tabbing) a:focus {
         margin-bottom:2rem;
     }
 }
+/*---------------------------------------*/
+/*---------------*/Skills
+/*--------------------------------------- */
 
+/* Skills Section Styling */
+.skills {
+    background: linear-gradient(to bottom right, #2d1b40, #000000);
+    padding: var(--gutter-huge) 0;
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.skills__box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--pink);
+}
+
+.skills__box h3 {
+    color: var(--pink);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.skills__list {
+    list-style: none;
+}
+
+.skills__list li {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skills__list li::before {
+    content: "•";
+    color: var(--pink);
+    position: absolute;
+    left: 0;
+}
+
+@media(max-width: 768px) {
+    .skills__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
 /* --------------------------------------- */
 /* ----- ----- */research
 /* --------------------------------------- */
