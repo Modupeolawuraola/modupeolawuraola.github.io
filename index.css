@@ -127,6 +127,18 @@ h3 {
     color: var(--white);
 }
 
+.section-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: brightness(1.2); /* Makes icons more visible against dark background */
+}
+
+h3 .section-icon + .section-icon {
+    margin-left: -5px; /* Adjusts spacing between two icons when they're next to each other */
+}
+
 .heading-primary {
     line-height: 1;
     font-size: var(--font-size-huge);
@@ -519,9 +531,27 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box {
     display: flex;
-    align-items:flex-start;
-    width:100%;
+    align-items: flex-start;
+    width: 100%;
     padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 50, 88, 0.2);
+    transition: all 0.3s ease;
+}
+
+.work__box:hover {
+    transform: translateY(-5px);
+    border-color: var(--pink);
+    box-shadow: 0 5px 15px rgba(255, 50, 88, 0.1);
+}
+
+.work h3 {
+    color: var(--pink);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: var(--font-size-medium);
 }
 
 @media(max-width: 900px) {
@@ -548,6 +578,36 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 auto;
 }
 
+.work__image-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery__image:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width: 900px) {
+    .work__image-gallery {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .gallery__image {
+        height: 220px;
+    }
+}
 .work__links {
     display: flex;
     align-items: center;
